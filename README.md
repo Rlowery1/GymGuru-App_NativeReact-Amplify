@@ -32,8 +32,9 @@ Setting Up Amplify Environment
 1. Clone the repository by running *git clone https://github.com/Rlowery1/GymGuru-App_NativeReact-Amplify.git* in the Command Prompt (or Terminal on macOS).
 2. Navigate to the project directory using *cd /your/path/to/gymguru* in the Command Prompt (or Terminal on macOS). */your/path/to is just a placeholder for your actual path*
 3. Initialize Amplify by running *amplify init* in the Command Prompt (or Terminal on macOS). Follow the prompts to set up your Amplify environment, including choosing a name, default text editor, and programming language. Go with the default choices.
-4. When prompted to add authentication, select "Amazon Cognito User Pool" and choose the default settings.
-5. Push changes to the cloud by running *amplify push* in the Command Prompt (or Terminal on macOS).
+4. Next initialize Amplify auth settings for Cognito by running *amplify add auth*.
+5. When prompted to add authentication, select "Amazon Cognito User Pool" and choose the default settings.
+6. Push changes to the cloud once finished, by running *amplify push* in the Command Prompt (or Terminal on macOS).
 
 Running the Application
 
