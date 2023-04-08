@@ -1,90 +1,39 @@
-Gymguru Workout Application
+Gymguru Workout Application for Windows and macOS
 
-Welcome to the Gymguru workout application! This app allows users to create and save their own personalized workouts based on their height, weight, gender, age, and fitness goals. The app also pulls data from the wger.de API to provide a library of pre-made workouts and exercises.
+Welcome to the Gymguru workout application! This app allows users to create and save personalized workouts based on height, weight, gender, age, and fitness goals. The app will also uses the wger.de API in the future for a library of pre-made workouts and exercises. Keep in mind that this app is still in development. 
 
 Prerequisites
+Install the following dependencies:
 
- Before you can use the Gymguru workout application, you'll need to download and install several dependencies:
-
-1. Node.js: This is a JavaScript runtime that allows you to run JavaScript code outside of a web browser. Download and install the latest version of Node.js from the official website.
-
-2. Git Bash: This is a command line interface for interacting with Git repositories. Download and install Git Bash from the official website.
-
-3. AWS CLI: This is a command line interface for interacting with Amazon Web Services. Download and install the AWS CLI by following the instructions in the official documentation.
-
-4. Amplify CLI: This is a command line interface for interacting with AWS Amplify, which is a set of tools and services for building scalable and secure cloud-powered mobile and web applications. Install the Amplify CLI by running the following command in your terminal:
-
-
-5. Copy this code and run it in your command prompt
-
-npm install -g @aws-amplify/cli
-
-.Expo CLI: This is a command line interface for interacting with Expo, which is a set of tools and services for building, deploying, and managing React Native applications. Install the Expo CLI by running the following command in your terminal:
-
-6. Copy this code and run it in your command prompt
-
-npm install -g expo-cli
-
-.Expo App: This is a mobile app for testing and running your React Native applications on your mobile device. Download the Expo app from the Apple App Store or Google Play Store.
+. Node.js; https://nodejs.org/en/download: A JavaScript runtime for running JavaScript code outside of a web browser.
+. Git; https://git-scm.com/downloads: A version control system for tracking changes in source code. (macOS users can alternatively use Xcode: https://developer.apple.com/xcode/ or Homebrew to install Git)
+. AWS CLI; https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html: A command line interface for interacting with Amazon Web Services. Make sure to click on either Mac or Windows and follow the instructions to download the AWS CLI. 
+. Amplify CLI: A command line interface for interacting with AWS Amplify. Install by running npm install -g @aws-amplify/cli in the Command Prompt (or Terminal on macOS).
+. Expo CLI;  A command line interface for interacting with Expo. Install by running npm install -g expo-cli in the Command Prompt (or Terminal on macOS). 
+. Expo App: A mobile app for testing React Native applications. Available on Apple App Store and Google Play Store that you download on your physical phone.
 
 Setting Up Your AWS Account
 
-.Before you can use AWS Amplify, you'll need to create a new AWS account and a new user within that account. Follow these steps to set up your AWS account:
+1. Go to the AWS sign-up page and click "Create a new AWS account."
+2. Follow the prompts to create your account. You'll need to enter your email address, create a password, and provide your full name and contact information. You'll also need to enter credit card information, as AWS requires a valid payment method for account verification.
+3. Complete the AWS Identity Verification process, which includes receiving a phone call or text message and entering the provided verification code.
+4. Choose a support plan. For initial testing, the Basic (free) plan is sufficient.
+5. Once your account is created, access the AWS Management Console.
+6. Click on your username in the top-right corner, then select "My Security Credentials."
+7. Under "Access keys", click "Create access key" and download the CSV file containing your access key and secret access key.
 
-1. Go to the AWS sign-up page and click "Create a new AWS account".
+Setting Up Amplify Environment
 
-2. Follow the prompts to create your account. You'll need to enter your email address, password, and credit card information.
+1. Clone the repository by running *git clone https://github.com/Rlowery1/GymGuru-App_NativeReact-Amplify.git* in the Command Prompt (or Terminal on macOS).
+2. Navigate to the project directory using *cd /your/path/to/gymguru* in the Command Prompt (or Terminal on macOS). */your/path/to is just a placeholder for your actual path*
+3. Initialize Amplify by running *amplify init* in the Command Prompt (or Terminal on macOS). Follow the prompts to set up your Amplify environment, including choosing a name, default text editor, and programming language. Go with the default choices.
+4. When prompted to add authentication, select "Amazon Cognito User Pool" and choose the default settings.
+5. Push changes to the cloud by running *amplify push* in the Command Prompt (or Terminal on macOS).
 
-3. Once you've created your AWS account, navigate to the AWS Management Console.
+Running the Application
 
-4. In the top-right corner of the console, click on your username and then click "My Security Credentials".
+1. Install dependencies by running *npm install* in the Command Prompt (or Terminal on macOS).
+2. Start the application using expo start in the Command Prompt (or Terminal on macOS).
+3. Scan the QR code displayed in the terminal using the Expo app on your mobile device.
 
-5. Click on "Create access key" under "Access keys (access key ID and secret access key)".
-
-6. Download the CSV file that contains your access key and secret access key. Keep this file in a safe place, as you'll need it later.
-
-.Once you've created your AWS account and user, you're ready to set up Amplify and Cognito authentication.
-
-Setting Up Your Amplify Environment
-
-.Follow these steps to set up your Amplify environment:
-
-1. Clone the Gymguru workout application repository to your local machine by running the following command in your terminal:
-
-git clone https://github.com/Rlowery1/GymGuru-App_NativeReact-Amplify.git
-
-2. Navigate to the project directory by running the following command in your terminal:
-
-cd gymguru
-
-3. Initialize Amplify by running the following command:
-
-amplify init
-
-4. Follow the prompts to set up your Amplify environment. You'll need to choose a name for your environment, choose your default text editor, and select the programming language you're using.
-
-5. When prompted to add authentication, select "Amazon Cognito User Pool" and choose the default settings.
-
-6. Once you've set up your Amplify environment, push your changes to the cloud by running the following command:
-
-amplify push
-
-.This will create your backend resources in the cloud and generate your API endpoints.
-
-.Running the Application
-
-Follow these steps to run the Gymguru workout application:
-
-1. Install the project dependencies by running the following command in your terminal:
-
-npm install
-
-2. Start the application by running the following command:
-
-expo start
-
-.Once the application has started, you'll see a QR code in your terminal. Open the Expo app on your mobile device and scan the QR code to open the application.
-
-Note that the connection between your computer and your phone over the local network might not be optimal, so if you experience any issues, try reloading the app by pressing "r" in your terminal.
-
-Congratulations! You've successfully set up and run the Gymguru workout application. If you have any questions or issues, please don't hesitate to reach out to our support team. Thank you for using the Gymguru workout application!
+Note: If you experience connection issues, press "r" in the Command Prompt (or Terminal on macOS) to reload the app.
