@@ -33,7 +33,7 @@ Setting Up Amplify Environment
 Running the Application
 
 1. Install dependencies by running *npm install* in the Command Prompt (or Terminal on macOS).
-2. Start the application using expo start in the Command Prompt (or Terminal on macOS).
+2. Start the application using *expo start* in the Command Prompt (or Terminal on macOS).
 3. Scan the QR code displayed in the terminal using the Expo app on your mobile device.
 
 Note: If you experience connection issues, press "r" in the Command Prompt (or Terminal on macOS) to reload the app.
