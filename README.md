@@ -6,10 +6,15 @@ Prerequisites
 Install the following dependencies:
 
 . Node.js; https://nodejs.org/en/download: A JavaScript runtime for running JavaScript code outside of a web browser.
+
 . Git; https://git-scm.com/downloads: A version control system for tracking changes in source code. (macOS users can alternatively use Xcode: https://developer.apple.com/xcode/ or Homebrew to install Git)
+
 . AWS CLI; https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html: A command line interface for interacting with Amazon Web Services. Make sure to click on either Mac or Windows and follow the instructions to download the AWS CLI. 
+
 . Amplify CLI: A command line interface for interacting with AWS Amplify. Install by running npm install -g @aws-amplify/cli in the Command Prompt (or Terminal on macOS).
+
 . Expo CLI;  A command line interface for interacting with Expo. Install by running npm install -g expo-cli in the Command Prompt (or Terminal on macOS). 
+
 . Expo App: A mobile app for testing React Native applications. Available on Apple App Store and Google Play Store that you download on your physical phone.
 
 Setting Up Your AWS Account
